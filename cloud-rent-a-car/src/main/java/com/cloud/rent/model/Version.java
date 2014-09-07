@@ -24,6 +24,14 @@ public class Version implements Serializable{
 		return number;
 	}
 	
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setNumber(String number) {
+		this.number = number;
+	}
+
 	public static Version getInstance(){
 		if(v == null){
 			v = new Version();
