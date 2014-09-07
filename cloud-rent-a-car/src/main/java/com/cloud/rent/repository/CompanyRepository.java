@@ -7,5 +7,5 @@ import com.cloud.rent.model.Company;
 
 @Repository
 public interface CompanyRepository extends PagingAndSortingRepository<Company, Long>{
-
+ 
 }

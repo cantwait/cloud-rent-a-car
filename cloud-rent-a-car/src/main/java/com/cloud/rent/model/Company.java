@@ -16,7 +16,7 @@ public class Company implements Serializable, Cloneable{
 	 * 
 	 */
 	private static final long serialVersionUID = 6750811091150903995L;
-	@Id
+	@Id 
 	@GeneratedValue
 	private Long id;
 	private String name;

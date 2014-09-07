@@ -11,10 +11,9 @@ import com.cloud.rent.model.Version;
 @RestController
 @RequestMapping("info")
 public class VersionRestController {
-	
+	 
 	@RequestMapping(value="version",produces={MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
 	public ResponseEntity<?> getVersion(){
-		
 		return new ResponseEntity<Version>(Version.getInstance(),HttpStatus.OK);
 	}
 

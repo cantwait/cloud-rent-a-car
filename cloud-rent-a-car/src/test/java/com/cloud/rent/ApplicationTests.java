@@ -23,11 +23,12 @@ public class ApplicationTests {
 	
 	public static HttpHeaders headers;
 	public static RestTemplate template;
-	
+	 
 	public ApplicationTests(){}
 
 	@BeforeClass
 	public static void init() {
+		
 		headers = new HttpHeaders();
 		byte[] encodedAuthorisation = Base64.encode(new String("admin"+":"+"admin").getBytes());
 	    headers.add("Authorization", "Basic " + new String(encodedAuthorisation));
@@ -37,7 +38,7 @@ public class ApplicationTests {
 	}
 	
 	@Test
-	  public void thatVersionExists() {
+	public void versionExists() {
 	    
 	    HttpEntity<Version> requestEntity = new HttpEntity<Version>(headers);
 
@@ -51,6 +52,6 @@ public class ApplicationTests {
 	    System.out.println ("The App Version is " + version.getNumber());
 
 	    assertEquals("1.0.0", version.getNumber());
-	  }
+	 }
 
 }
