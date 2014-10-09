@@ -16,7 +16,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.codec.Base64;
 import org.springframework.web.client.RestTemplate;
 
-import com.cloud.rent.model.Version;
+import com.cloud.rent.model.core.Version;
 
 @RunWith(JUnit4.class)
 public class ApplicationTests {

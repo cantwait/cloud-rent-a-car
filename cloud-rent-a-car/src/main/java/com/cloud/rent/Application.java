@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @ComponentScan
 @EnableAutoConfiguration
-public class Application implements CommandLineRunner{
+public class Application{
 	
 	
 	
@@ -17,10 +17,6 @@ public class Application implements CommandLineRunner{
         SpringApplication.run(Application.class, args);
     }
 
-	@Override
-	public void run(String... arg0) throws Exception {
-		
-	}
 }
 
 

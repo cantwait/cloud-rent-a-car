@@ -1,4 +1,4 @@
-package com.cloud.rent.model;
+package com.cloud.rent.model.core;
 
 import java.io.Serializable;
 

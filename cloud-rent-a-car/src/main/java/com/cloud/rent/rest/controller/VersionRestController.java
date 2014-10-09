@@ -6,7 +6,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.cloud.rent.model.Version;
+import com.cloud.rent.model.core.Version;
 
 @RestController
 @RequestMapping("info")
